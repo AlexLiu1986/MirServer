@@ -1,0 +1,18 @@
+(@@InPutString @@InPutInteger)
+[@RESUME]
+#ACT
+SENDMSG 7 　　　　　　因为你上次下线的时候使用了离线挂机功能 253 255
+SENDMSG 7 　　　　　　　　　　　　　　　　　　　　　　　　 253 255
+SENDMSG 7 　　　　　　　管理员为避免你在游戏中出现数据错误 253 255
+SENDMSG 7 　　　　　　　　　　　　　　　　　　　　　　　　 253 255
+SENDMSG 7 　　　　　　　　　所以请你小退一下再重新登陆 253 255
+SENDMSG 7 　　　　　　　　　　　　　　　　　　　　　　　　 253 255
+KICK
+SETOFFLINEPLAY OFF
+
+[@Login]
+#If
+CheckLevelEx > 0
+#Act
+SetScTimer 2 1
+SETOFFLINEPLAY ON
